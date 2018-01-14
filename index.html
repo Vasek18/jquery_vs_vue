@@ -55,20 +55,29 @@
 				<p>Вы нажали на кнопку раз: {{ count }}</p>
 				<a href="#"
 				   class="btn btn-primary"
-				   v-on:click.prevent="increaseCounter">Нажми меня</a>
+				   @click.prevent="increaseCounter">Нажми меня</a>
 			</div>
 		</div>
 	</div>
 	<div class="screen">
 		<div class="container">
-			<h1>Детальная товара</h1>
+			<h1>Детальная товара из объекта</h1>
 			<div class="col-md-6"
 			     id="jquery-3">
 				<h2>Jquery</h2>
+				<div class="product js-product">
+					<h3 class="name js-name"></h3>
+					<div class="price"><b>Цена: <span class="js-price"></span></b></div>
+					<ul class="props js-props"></ul>
+					<a href="#"
+					   class="btn btn-primary js-buy"
+					   @click.prevent="buy">Купить</a>
+				</div>
 			</div>
 			<div class="col-md-6"
 			     id="vue-3">
 				<h2>Vue</h2>
+				<product :product="window.product"></product>
 			</div>
 		</div>
 	</div>
@@ -76,8 +85,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/vue-scripts.js"></script>
 <script src="js/jquery-scripts.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
