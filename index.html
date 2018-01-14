@@ -17,28 +17,60 @@
 	<div class="screen">
 		<div class="container">
 			<h1>Значение инпута в текст</h1>
-			<div class="col-md-6"><h2>Jquery</h2></div>
-			<div class="col-md-6"><h2>Vue</h2></div>
+			<div class="col-md-6"
+			     id="jquery-1">
+				<h2>Jquery</h2>
+				<p>Привет, <span class="js-username">Вася</span></p>
+				<input type="text"
+				       class="form-control js-username-input"
+				       placeholder="Введите ваше имя"
+				       value="Вася"
+				>
+			</div>
+			<div class="col-md-6"
+			     id="vue-1">
+				<h2>Vue</h2>
+				<p>Привет, {{ username }}</p>
+				<input type="text"
+				       class="form-control"
+				       placeholder="Введите ваше имя"
+				       v-model="username"
+				>
+			</div>
 		</div>
 	</div>
 	<div class="screen">
 		<div class="container">
 			<h1>Счётчик</h1>
-			<div class="col-md-6"><h2>Jquery</h2></div>
-			<div class="col-md-6"><h2>Vue</h2></div>
+			<div class="col-md-6"
+			     id="jquery-2">
+				<h2>Jquery</h2>
+			</div>
+			<div class="col-md-6"
+			     id="vue-2">
+				<h2>Vue</h2>
+			</div>
 		</div>
 	</div>
 	<div class="screen">
 		<div class="container">
 			<h1>Детальная товара</h1>
-			<div class="col-md-6"><h2>Jquery</h2></div>
-			<div class="col-md-6"><h2>Vue</h2></div>
+			<div class="col-md-6"
+			     id="jquery-3">
+				<h2>Jquery</h2>
+			</div>
+			<div class="col-md-6"
+			     id="vue-3">
+				<h2>Vue</h2>
+			</div>
 		</div>
 	</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/vue-scripts.js"></script>
+<script src="js/jquery-scripts.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
