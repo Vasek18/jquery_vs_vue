@@ -45,10 +45,17 @@
 			<div class="col-md-6"
 			     id="jquery-2">
 				<h2>Jquery</h2>
+				<p>Вы нажали на кнопку раз: <span class="js-counter">0</span></p>
+				<a href="#"
+				   class="btn btn-primary js-counter-btn">Нажми меня</a>
 			</div>
 			<div class="col-md-6"
 			     id="vue-2">
 				<h2>Vue</h2>
+				<p>Вы нажали на кнопку раз: {{ count }}</p>
+				<a href="#"
+				   class="btn btn-primary"
+				   v-on:click.prevent="increaseCounter">Нажми меня</a>
 			</div>
 		</div>
 	</div>

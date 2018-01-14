@@ -6,3 +6,15 @@ $(document).on("keyup", ".js-username-input", function(event){
 
 	textEl.text(text);
 });
+
+// Счётчик
+$(document).on("click", ".js-counter-btn", function(event){
+	event.preventDefault();
+
+	var textEl = $('.js-counter');
+	var count  = Number(textEl.text());
+
+	count++;
+
+	textEl.text(count);
+});
